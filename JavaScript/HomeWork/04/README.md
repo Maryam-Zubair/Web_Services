@@ -15,12 +15,12 @@ Run the server using: node index.js
 Access the server at https://localhost:8080 in your browser.
 
 
-# File Structure
+## File Structure
 
-app.js: Main application file setting up the HTTPS server.
-routes/: Folder containing custom route handlers.
-      alive.js: Handler for the '/alive' route.
-      getDevice.js: Handler for the '/get-device' route.
-      getIp.js: Handler for the '/get-ip' route.
-      getUser.js: Handler for the '/get-user' route.
-      startup.js: Handler for the root route ('/').
+- `app.js`: Main application file setting up the HTTPS server.
+- `routes/`: Folder containing custom route handlers.
+  - `alive.js`: Handler for the '/alive' route.
+  - `getDevice.js`: Handler for the '/get-device' route.
+  - `getIp.js`: Handler for the '/get-ip' route.
+  - `getUser.js`: Handler for the '/get-user' route.
+  - `startup.js`: Handler for the root route ('/').
