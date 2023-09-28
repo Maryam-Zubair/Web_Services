@@ -7,14 +7,8 @@ getUser.post('/',(req,res)=>{
     payload = req.body;
     console.log(payload);
 
-    let response = {};
-    for(let key in payload){
-        response[key] = payload[key];
-    }
-    res.send(response);
-
-    // // payload as response in json format
-    // res.json(payload);
+    // payload as response in json format
+    res.json(payload);
 
 })
 
