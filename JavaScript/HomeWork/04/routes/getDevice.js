@@ -4,7 +4,7 @@ const getDevice = express.Router()
 getDevice.use(express.json()); //parse json
 
 // collecting information so get method
-getDevice.get('/get-device', (req,res)=>{
+getDevice.get('/', (req,res)=>{
 
     // getting user-agent from request header
     const deviceInfo = req.headers['user-agent']
