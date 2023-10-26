@@ -41,3 +41,12 @@ To run the Order Tracking System locally, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/order-tracking-system.git
+
+1. Install the required dependencies:
+         npm install
+2. Configure your settings:
+Create a .env file to store your DHL API key (DHL_API_Key) and any other necessary configurations.
+3. Start the Server
+         npm start
+4. Access the application through API requests
+POST /track: This endpoint allows users to track an order by providing the order number in the request body. The system returns tracking details, including the origin, destination, and status of the order.
