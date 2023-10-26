@@ -9,15 +9,15 @@ The Order Tracking System is a lightweight application built with Express.js and
 
 ## Documentation
 
-### Using the API
+## Using the API
 
 #### Endpoint
 
-To track an order, make a `POST` request to the following endpoint:
+To track an order, make a **POST** request to the following endpoint:
 
 **POST /track**
 
-- Application URL: `https://localhost:8000/track`
+- Application URL: https://localhost:8000/track
 
 #### Request Format
 
@@ -27,6 +27,7 @@ The request should include a JSON object in the request body with the following 
 {
   "orderNum": "order-number"
 }
+  
 Replacing the "order-number" in request body with actual order number
 Expected Response Format
 
