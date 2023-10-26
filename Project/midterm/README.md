@@ -35,6 +35,7 @@ The API will respond with a JSON object containing the tracking details, includi
 - `status`: The current status of the order.
 
 **Example response:**
+```json
 {
     "stat": "delivered",
     "desc": "THE SHIPMENT HAS BEEN SUCCESSFULLY DELIVERED",
