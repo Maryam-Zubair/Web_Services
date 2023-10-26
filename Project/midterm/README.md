@@ -60,7 +60,7 @@ To set up the environment for the Order Tracking System, follow these steps:
 
 ## Status Codes
 
-- '200 OK': The request was successful, and tracking details are returned.
+- `200 OK`: The request was successful, and tracking details are returned.
 
 - `400 Bad Request`: The request format is incorrect or missing data.
 
