@@ -20,11 +20,10 @@ To track an order, make a **POST** request to the following endpoint:
 #### Request Format
 
 The request should include a JSON object in the request body with the following format:
-
-```json
 {
   "orderNum": "order-number"
 }
+
   
 Replacing the "order-number" in request body with actual order number
 ### Expected Response Format
@@ -36,8 +35,6 @@ The API will respond with a JSON object containing the tracking details, includi
 - `status`: The current status of the order.
 
 **Example response:**
-
-```json
 {
     "stat": "delivered",
     "desc": "THE SHIPMENT HAS BEEN SUCCESSFULLY DELIVERED",
@@ -63,7 +60,7 @@ To set up the environment for the Order Tracking System, follow these steps:
 
 ## Status Codes
 
-- `200 OK`: The request was successful, and tracking details are returned.
+- '200 OK': The request was successful, and tracking details are returned.
 
 - `400 Bad Request`: The request format is incorrect or missing data.
 
