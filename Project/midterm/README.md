@@ -7,6 +7,70 @@ The Order Tracking System is a Node.js application that allows users to track or
 
 The Order Tracking System is a lightweight application built with Express.js and uses the DHL API to fetch real-time tracking information. Users can submit an order number, and the system returns key tracking details, including the origin, destination, and status of the order.
 
+## Documentation
+
+### Using the API
+
+#### Endpoint
+
+To track an order, make a `POST` request to the following endpoint:
+
+**POST /track**
+
+- Application URL: `https://localhost:8000/track`
+
+#### Request Format
+
+The request should include a JSON object in the request body with the following format:
+
+```json
+{
+  "orderNum": "order-number"
+}
+Replacing the "order-number" in request body with actual order number
+Expected Response Format
+
+The API will respond with a JSON object containing the tracking details, including:
+
+origin: The origin of the order.
+dest: The destination of the order.
+status: The current status of the order.
+Example response:
+
+json
+{
+    "stat": "delivered",
+    "desc": "THE SHIPMENT HAS BEEN SUCCESSFULLY DELIVERED",
+    "time": "2023-08-04T13:49:37",
+    "origin": {
+        "countryCode": "DE"
+    },
+    "dest": {
+        "countryCode": "DE"
+    }
+}
+## Environment Variables
+
+To set up the environment for the Order Tracking System, follow these steps:
+
+1. Create a `.env` file in the project directory.
+
+2. Add your DHL API key to the `.env` file as follows:
+
+   ```makefile
+   DHL_API_Key=your-api-key
+
+## Status Codes
+
+- `200 OK`: The request was successful, and tracking details are returned.
+
+- `400 Bad Request`: The request format is incorrect or missing data.
+
+- `404 Not Found`: No tracking information is found for the provided order number.
+
+- `500 Internal Server Error`: An error occurred while fetching tracking details.
+
+
 ## Code Files
 
 ### `main.js`
@@ -32,21 +96,3 @@ The `trackinginfo.js` file defines the tracking information used by the system. 
 
 - A predefined list of order tracking information, each with an order number and tracking number.
 - A function to find tracking information based on the provided order number.
-
-## Getting Started
-
-To run the Order Tracking System locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/order-tracking-system.git
-
-1. Install the required dependencies:
-         'npm install'
-2. Configure your settings:
-Create a .env file to store your DHL API key (DHL_API_Key) and any other necessary configurations.
-3. Start the Server:
-         'npm start'
-4. Access the application through API requests
-POST /track: This endpoint allows users to track an order by providing the order number in the request body. The system returns tracking details, including the origin, destination, and status of the order.
