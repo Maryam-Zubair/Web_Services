@@ -1,0 +1,112 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.App-header {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold
+}
+.App h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #e7a5c6; 
+  color: rgb(244, 234, 234); 
+  padding: 10px 20px; 
+  border: none;
+}
+.App p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(69, 3, 3);
+}
+
+
+.App-content {
+  display: flex; 
+  justify-content: space-between; 
+  margin: 20px 0; 
+}
+
+.article {
+  padding: 20px; 
+  border: 2px solid #ddd; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+}
+
+.Event {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: rgb(24, 107, 63);
+  background-color: #acecca;
+}
+
+.Painting {
+  font-family: 'Arial', sans-serif;
+  flex: 2;
+  font-size: 20px;
+  color: rgb(26, 63, 94);
+  background-color: #c1cfe1; 
+}
+
+.Chess {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: rgb(126, 44, 114);
+  background-color: #ddc4d6; 
+}
+
+
+.image {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.image img {
+  max-width: 40%; 
+  height: 200px; 
+}
+
+
+.App-sidebar {
+  background-color: #ebf4d3; 
+  padding: 200x; 
+  width: 1400px;
+}
+
+
+.App-section {
+  margin-bottom: 20px; 
+}
+
+.App-section h2 {
+  font-size: 1.5rem; 
+  color: rgb(75, 78, 18); 
+  margin-bottom: 10px; 
+}
+
+.App-list li {
+  font-size: 1rem; 
+  color: rgb(126, 149, 10); 
+  margin-bottom: 5px; 
+}
+
+.App-list li:hover {
+  color: #000; 
+  font-weight: bold;
+  cursor: pointer; 
+}
+
+body {
+  margin: 20px; 
+}
