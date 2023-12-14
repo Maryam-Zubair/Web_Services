@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url('cool.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for nav */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between each option */
+}
+
+nav a {
+    display: block;
+    padding: 10px 70px;
+    text-decoration: none;
+    color: white;
+    text-size-adjust: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Colors for each option */
+nav a[href$='add-event.html'] { background-color: #007bff; }
+nav a[href$='add-event.html']:hover { background-color: #0056b3; }
+
+nav a[href$='view-events.html'] { background-color: #28a745; }
+nav a[href$='view-events.html']:hover { background-color: #1e7e34; }
+
+nav a[href$='update-event.html'] { background-color: #ffc107; }
+nav a[href$='update-event.html']:hover { background-color: #d39e00; }
+
+nav a[href$='delete-event.html'] { background-color: #dc3545; }
+nav a[href$='delete-event.html']:hover { background-color: #bd2130; }
