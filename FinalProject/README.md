@@ -25,3 +25,9 @@ This Node.js application, built with Express and MongoDB, provides a RESTful API
    ```bash
    npm install
 
+
+### Running code
+   ```bash
+   npm start
+
+
